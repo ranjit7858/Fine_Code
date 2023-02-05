@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+    /* background-color: #0C0507;    */
+}
+.sidebar{
+    margin-left: 50px;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    background: #232931;
+    width: 246px;
+    height: 100vh;
+}
+
+
+/* sub-container1 */
+.sub-container1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: -33px;
+    align-items: center;
+}
+.sub-container1 .p1{
+    display: flex;
+}
+.sub-container1 .p2{
+    display: flex;
+    margin-top: 20px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+.p1 img{
+    height: 85.76596069335938px;
+    width: 86.07447052001953px; 
+    border-radius:50%;
+}
+
+
+/* sub-container2 */
+.sub-container2{
+    margin-top: 100px;
+    display: flex;
+}
+.sub-container2 ul a{
+    text-decoration: none;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    color: white;
+}
+.sub-container2 ul{
+    list-style-type: none;
+
+}
+.sub-container2 ul li{
+    padding-top: 30px;
+
+}
+.sub-container2 ul li:hover{
+    background: linear-gradient(90deg, #4ECCA3 -171.15%, rgba(78, 204, 163, 0) 77.4%);
+}
+
+/* chart */
+.container2
+{
+    display: flex;
+    /* background: ; */
+    border-radius: 5px;
+}
+.container2 #chart-container {
+    width: 640px;
+    height: auto;
+}
+  
+button{
+    padding: 10px 20px;
+}
+
+.container4{
+    color: black;
+}
+
+.content-table{
+    position: relative;
+    right: 80%;
+    top: 70%;
+}
+
+
+.content-table {
+    border-collapse: collapse;
+    /* margin: 25px 0; */
+    font-size: 0.9em;
+    min-width: 600px;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    text-align: center;
+}
+
+.content-table thead tr {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 10px 20px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid black;
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 40%;
+}
+
+
+
+/* chart */
+
+.container2 #chart-container {
+    margin-top: 30px;
+    margin-left: 30px;
+    /* width: 640px; */
+    display: flex;
+    /* background: #0C0507; */
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+}
+.container3 #chart-container2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 640px;
+    display: flex;
+    background: #0C0507;
+    width: 572px;
+    height: 280px;
+    border-radius: 10px;
+}
+.graphs{
+    display: flex;
+    flex-direction: row;
+}
+/* .container4{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    background: #A7E0DA;
+    justify-content: space-around;
+    font-family: 'Space Grotesk';
+    padding-left: 20px;
+    font-style: normal;
+    width: 572px;
+    height: 280px;
+    border-radius: 10px;
+} */
+.container4 c1{
+    display: flex;
+}
+.container4 span{
+    margin-left:150px;
+}
+
+#myChart1{
+    position: relative;
+    left: 50%;
+
+    width: 400px;
+}
+#myChart2{
+    width: 400px;
+}

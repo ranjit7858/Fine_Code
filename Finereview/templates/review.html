@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class = "container">
+    <div class = "container1">
+        <nav class = "sidebar">
+            <div class = "sub-container1">
+            <div class = "p1"><img src="{% static 'Images/img_avatar.png'%}" alt="image"></div>
+            <div class = "p2">Akshat Pandey</div>
+            </div>
+            <div class = "sub-container2">
+            <ul>
+                <li><a href="#">Classrooms</a></li>
+                <li><a href="#">To Do</a></li>
+                <li><a href="#">For Review</a></li>
+                <li><a href="#">Create Assignment</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><button>Log Out</button></li>
+            </ul>
+            
+            </div>
+        </nav>
+    </div>
+    <div class = "container2">
+        <canvas id="myChart1"></canvas>
+    </div>  
+    <div class = "container3">
+        <canvas id="myChart2"></canvas>   
+    </div>
+    <div class="container4">
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Plagrisam Percentage</th>
+            </tr>
+          <tr>
+            <th>Code 1</th>
+            <th>Code 2</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i,j,k in zipped %}
+          <tr>
+            <td>{{ i }}</td>
+            <td>{{ j }}</td>
+            <td>{{ k }}</td>
+          </tr>
+          {% endfor %}
+          
+        </tbody>
+      </table>
+    </div>
+    </div>
+ 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <!-- <script src="{% static 'js/script.js' %}"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+          <script>
+            const ctx1 = document.getElementById('myChart1');
+            
+            new Chart(ctx1, {
+              type: 'bar',
+              data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                  label: '# of Votes',
+                  data: [12, 19, 3, 5, 2, 3],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+
+
+<script>
+    const ctx2 = document.getElementById('myChart2');
+    
+    new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
