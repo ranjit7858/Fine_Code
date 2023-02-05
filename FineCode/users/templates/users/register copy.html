@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    {% load widget_tweaks %}
+{% load crispy_forms_tags %}
+
+{% block title %} Register {% endblock title %}
+
+{% block content %}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title></title>
+    <meta name="description" content="" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'mainapp/css/global.css' %}" />
+    <link rel="stylesheet" href="{% static 'mainapp/css/login.css' %}" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="sign-up-page">
+      <a class="logo-a"
+        ><div class="logo-div">
+          <b class="codeit-b"
+            ><span>Fine</span><span class="it-span">code</span></b
+          >
+        </div></a
+      >
+      <div class="rigth-section-div">
+        <div class="join-now-section">
+          <div class="k-developers-joined-us-now-i">
+            3k+ developers joined us, now it's your turn
+          </div>
+          <div class="people-pic-div">
+            <div class="pic-1-div">
+              <img class="male-icon" alt="" src="public/male@2x.png" />
+            </div>
+            <div class="pic-2-div">
+              <img class="male-icon" alt="" src="public/male1@2x.png" />
+            </div>
+            <div class="pic-3-div">
+              <img class="male-icon" alt="" src="public/female@2x.png" />
+            </div>
+            <div class="pic-4-div">
+              <img class="male-icon" alt="" src="public/female1@2x.png" />
+            </div>
+          </div>
+        </div>
+        <img
+          class="abstract-lines-icon"
+          alt=""
+          src="Images/Abstract Lines.png"
+        />
+        <div class="saly-10-div">
+          <img class="saly-10-icon" alt="" src="Images/Saly-10.png" />
+        </div>
+        <div class="paragraph-div">
+          Learn coding from scratch with best mentor and become expert in the
+          next day! Supportive community, lots of expert will help you to
+          improve your coding skill.
+        </div>
+        <b class="hero-text-b"
+          ><p class="learn-coding-in">Learn Coding in</p>
+          <p class="learn-coding-in">a Better Way With</p>
+          <p class="expert">Expert.</p></b
+        >
+      </div>
+      <div class="form-section-div">
+        <button class="button-sign-up">
+          <div class="sign-up-div">Sign Up</div>
+        </button>
+        <div class="already-have-an-account-log-i">
+          <span class="already-have-an-account"
+            ><span>Already have an account?</span
+            ><span class="span"> </span></span
+          ><span class="log-in-span"><a href="#" class="login-link">Log In</a></span>
+        </div>
+        <form action="POST" class="user"> 
+            {% csrf_token %}
+            {% comment %} {{ form | crispy }} {% endcomment %}
+            <div class="password-div">
+            <input
+                name="password1"
+                class="rectangle-input" 
+                type="password"
+                placeholder="Password"
+                id="id_password1"
+                autocomplete="new-password"
+                required
+            />
+            
+            </div>
+            <div class="email-div">
+            <input
+                name="email"
+                class="rectangle-input"
+                type="email"
+                placeholder="Email"
+                id="id_email"
+                required
+            />
+            </div>
+            <div class="name-div">
+                <input
+                name="first_name"
+                class="textinput textInput form-control rectangle-input"
+                type="text"
+                placeholder="First Name"
+                id="id_first_name"
+                required
+                />
+            </div>
+            <div class="username-div">
+                <input
+                name="username"
+                class="textinput textInput form-control rectangle-input"
+                type="text"
+                placeholder="Username"
+                id="id_username"
+                required
+                />
+            </div>
+            <div class="name-div last-div">
+                <input
+                name="last_name"
+                class="textinput textInput form-control rectangle-input last-input"
+                id="id_last_name"
+                type="text" 
+                placeholder="Last Name"
+                required
+                />
+            </div>
+            <div class="password2-div">
+                <input
+                    name="password2"
+                    class="rectangle-input" 
+                    type="password2"
+                    placeholder="Confirm Password"
+                    id="id_password2"
+                    autocomplete="new-password"
+                    required
+                />
+                
+            </div>
+            <div class="sign-up-div1">Sign Up</div>
+        </div>
+        </div>
+    </form>
+    <script></script>
+  </body>
+</html>
+{% endblock content %}

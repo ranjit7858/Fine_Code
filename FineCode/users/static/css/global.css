@@ -1,0 +1,26 @@
+:root {
+    /* fonts */
+    --font-inter: Inter;
+  
+    /* font sizes */
+    --font-size-base: 17px;
+    --font-size-lg: 18px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-gray-100: #d9fffd;
+    --color-gray-200: #b0b0b0;
+    --color-gray-300: #1a3447;
+    --color-gray-400: rgba(26, 52, 71, 0.7);
+  
+    /* Paddings */
+    --padding-sm: 5px;
+    --padding-md: 10px;
+  
+    /* border radiuses */
+    --br-xs: 5px;
+    --br-sm: 30px;
+    --br-md: 100px;
+    --br-lg: 999px;
+  }
+  
