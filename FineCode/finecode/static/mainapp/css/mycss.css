@@ -1,0 +1,17 @@
+:root {
+    --pri: #232931;
+    --sec: #393e46;
+    --tert: #4ecca3;
+    --quad: #eeeeee;
+
+}
+.sidebar-main{
+    background-color: var(--pri) !important;     
+  background-image: linear-gradient(180deg, var(--pri) 10%, var(--pri) 100%) !important;
+  background-size: cover;
+}
+
+.round{
+    position: relative ;
+    top:200px !important;
+}

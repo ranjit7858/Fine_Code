@@ -1,0 +1,399 @@
+@import url("http://fonts.cdnfonts.com/css/clash-display");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+:root {
+  --pri: #232931;
+  --sec: #393e46;
+  --tert: #4ecca3;
+  --quad: #eeeeee;
+}
+body {
+    margin: 0;
+    line-height: normal;
+    background-color: var(--pri);
+    font-family: 'Urbanist',sans-serif !important;
+  }
+  .vuesaxboldscroll-icon {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+  }
+  .it-span {
+    color: var(--tert);
+  }
+  .codeit-b {
+    font-family: 'Clash Display', sans-serif; 
+    font-size: 2rem;
+    color: var(--quad);
+    position: relative;
+    display: inline-block;
+  }
+  .logo-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-family: 'Clash ';
+  }
+  .logo-a {
+    text-decoration: none;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    width: 145px;
+    height: 35px;
+    color: inherit;
+  }
+  .k-developers-joined-us-now-i {
+    position: absolute;
+    top: 4px;
+    left: 125px;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .male-icon,
+  .pic-1-div,
+  .pic-2-div,
+  .pic-3-div,
+  .pic-4-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+  }
+  .male-icon {
+    border-radius: var(--br-lg);
+    object-fit: cover;
+  }
+  .pic-1-div,
+  .pic-2-div,
+  .pic-3-div,
+  .pic-4-div {
+    border-radius: var(--br-md);
+    background-color: var(--color-white);
+  }
+  .pic-2-div,
+  .pic-3-div,
+  .pic-4-div {
+    top: -2px;
+    left: 23px;
+    border: 2px solid var(--color-gray-100);
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+  }
+  .pic-3-div,
+  .pic-4-div {
+    left: 48px;
+  }
+  .pic-4-div {
+    left: 73px;
+  }
+  .join-now-section,
+  .people-pic-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105px;
+    height: 30px;
+  }
+  .join-now-section {
+    top: 410px;
+    left: 79px;
+    width: 477px;
+  }
+  .abstract-lines-icon,
+  .saly-10-icon {
+    position: absolute;
+    height: 71.13%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 28.87%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .saly-10-icon {
+    height: 300px;
+    width: 200px;
+    /* height: 100%; */
+    bottom: 0;
+    object-fit: cover;
+  }
+  .saly-10-div {
+    position: absolute;
+    top: 360px;
+    left: 35%;
+    width: 418px;
+    height: 418px;
+  }
+  .paragraph-div {
+    position: absolute;
+    top: 320px;
+    left: 100px;
+    font-weight: 500;
+    display: inline-block;
+    width: 470px;
+  }
+  .learn-coding-in {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .expert {
+    margin: 0;
+  }
+  .hero-text-b {
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    font-size: 3rem;
+    line-height: 110%;
+    display: inline-block;
+    color: var(--color-gray-300);
+  }
+  .rigth-section-div {
+    background-image: url(/static/mainapp/img/lnc.png);
+    position: absolute;
+    top: 30px;
+    left: 750px;
+    border-radius: var(--br-sm);
+    background-color: rgba(217, 255, 253, 0.6);
+    width: 720px;
+    height: 650px;
+    overflow: hidden;
+    font-size: var(--font-size-base);
+    color: var(--color-gray-400);
+  }
+  .sign-up-div {
+    position: relative;
+    font-size: var(--font-size-lg);
+    top: 450px;
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: var(--color-white);
+    text-align: left;
+    display: inline-block;
+  }
+  .button-sign-up {
+    cursor: pointer;
+    border: 0;
+    padding: 20px var(--padding-md);
+    background-color: var(--color-gray-300);
+    position: absolute;
+    top: 450px;
+    left: 1px;
+    border-radius: var(--br-xs);
+    width: 469px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .span {
+    color: #000;
+  }
+  .already-have-an-account {
+    font-weight: 500;
+  }
+  .log-in-span {
+    font-weight: 600;
+    color: var(--color-gray-300);
+  }
+  .already-have-an-account-log-i {
+    position: absolute;
+    top: 520px;
+    left: 96px;
+    display: inline-block;
+    color: var(--quad);
+  }
+  .frame-div,
+  .rectangle-input {
+    position: absolute;
+    background-color: var(--color-white);
+    box-sizing: border-box;
+  }
+  .rectangle-input {
+    border: 2px solid var(--color-gray-200);
+    top: 0;
+    left: 0;
+    border-radius: var(--br-xs);
+    width: 470px;
+    height: 60px;
+  }
+  .frame-div {
+    top: 9px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-md) var(--padding-sm);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .password-div,
+  .vuesaxboldeye-icon {
+    position: absolute;
+    top: 18px;
+    left: 426px;
+    width: 24px;
+    height: 24px;
+  }
+  .password-div {
+    top: 310px;
+    left: 0;
+    width: 470px;
+    height: 60px;
+  }
+  .e-mail-div {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .frame-div1 {
+    position: absolute;
+    top: 9px;
+    left: 11px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-md) var(--padding-sm);
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .email-div,
+  .name-input {
+    position: absolute;
+    top: 240px;
+    left: 0;
+    width: 470px;
+    height: 60px;
+  }
+  .name-div input{
+    /* background-color: transparent; */
+    top: 100px;
+    width: 200px;
+  }
+  .sign-up-div1 {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--quad);
+    display: inline-block;
+  }
+  .form-section-div {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    /* width: 400px; */
+    height: 200px;
+    font-size: 0.9rem;
+    color: var(--color-gray-200);
+  }
+  .sign-up-page {
+    position: relative;
+    background-color: var(--pri);
+    width: 100%;
+    height: 713px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 28px;
+    color: var(--color-gray-300);
+    font-family: var(--font-inter);
+  }
+  
+
+  .last-div{
+    position: absolute;
+    left: 270px;
+  }
+
+  .login-link{
+    text-decoration: none;
+    color: var(--tert);
+  }
+  
+  .username-div{
+    position: absolute;
+      top: 170px;
+  }
+
+  .rectangle-input{
+    padding: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .password2-div{
+    position: absolute;
+    top: 380px;
+  }
+
+
+  .button-register{
+    position: relative;
+    top: 700px;
+  }
+
+
+  .email-div,
+  .name-input {
+    position: absolute;
+    top: 240px;
+    left: 0;
+    width: 470px;
+    height: 60px;
+  }
+
+/*   
+
+  form{
+    position: relative;
+    top: 90px;
+  }
+
+  form input{
+    padding: 5px;
+  }
+
+  #div_id_first_name{
+    padding-bottom: 20px;
+  }
+
+  #div_id_last_name{
+    position: absolute;
+    top: -1px;
+    left: 200px;
+    width: 470px;
+    height: 60px;
+    padding-bottom: 10px;
+  }
+
+  #div_id_username{
+    padding-bottom: 10px;
+  }
+
+  #div_id_email{
+    padding-bottom: 10px;
+  }
+   */
+
+  .form-control{
+    border-radius: 0 !important;
+    background-color: var(--pri) !important;
+    border:2px solid var(--tert) !important;
+    color: white !important;
+  }
+
